@@ -24,6 +24,13 @@ UART/
 │
 └── README.md             # Project documentation
 
+EDA Playground Links
+You can test and run the modules directly online:
+
+UART TX: https://edaplayground.com/x/hB3H
+
+UART RX: https://edaplayground.com/x/cnkd
+
 Simulation & Verification
 This project can be simulated using tools like ModelSim, Xilinx Vivado, or online platforms like EDA Playground.
 
