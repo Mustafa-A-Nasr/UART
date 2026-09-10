@@ -44,6 +44,11 @@ initial begin
              $time, rst, Data_Valid, P_Data, PAR_EN, PAR_TYP, busy, TX_OUT);
 end
 
+initial begin
+  $dumpfile("dump.vcd");
+  $dumpvars(1);
+end
+    
 task reset();
     begin
         rst = 1'b1;
