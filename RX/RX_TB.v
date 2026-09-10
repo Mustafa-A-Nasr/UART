@@ -53,7 +53,12 @@ initial begin
     $monitor("Time = %0t ns | RST_n = %b | RX_IN = %b | P_DATA = %h | data_valid = %b | PAR_EN = %b | PAR_TYP = %b",
              $time, RST_n, RX_IN, P_DATA, data_valid, PAR_EN, PAR_TYP);
 end
-
+    
+initial begin
+  $dumpfile("dump.vcd");
+  $dumpvars(1);
+end
+    
 task reset();
     begin
         RST_n = 1'b1;
